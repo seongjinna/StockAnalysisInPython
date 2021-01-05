@@ -24,6 +24,7 @@ date                                     ...
 df['MA20'] = df['close'].rolling(window=20).mean()   
 df['MA200'] = df['close'].rolling(window=200).mean() 
 
+
 plt.figure(figsize=(9, 7))
 plt.plot(df.index, df['close'], color='cyan', label='Close')
 plt.plot(df.index, df['MA20'], 'm--', label='MA20')
